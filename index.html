@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorando Exoplanetas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        :root {
+            --primary-color: #2b2d42;
+            --secondary-color: #8d99ae;
+            --accent-color: #edf2f4;
+        }
+
+        body {
+            background-color: var(--primary-color);
+            color: var(--accent-color);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header {
+            background-color: var(--secondary-color);
+            color: var(--accent-color);
+        }
+
+        .explore-link {
+            color: var(--accent-color);
+            background-color: var(--primary-color);
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .explore-link:hover {
+            background-color: var(--secondary-color);
+        }
+    </style>
+
+<body>
+    <!--Encabezamiento-->
+    <header>
+        <div class="header-content">
+            <h1>Explorando Nuevos Mundos: La Aventura de los Exoplanetas</h1>
+           
+            <div class="video-container">
+                <video id="header-video" class="header-video" autoplay muted loop>
+                    <source src="video/Sistema solar. En 360 grados. Realidad virtual..mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </div>
+    </header>
+     <!--Menu de Contenido-->
+     <main>
+        <!--Introduccion-->
+        <section id="intro">
+            <p>Descubre el fascinante universo de los exoplanetas, mundos que se encuentran más allá de nuestro sistema solar</p>
+            <h2>¿Qué son los exoplanetas?</h2>
+            <p>Un exoplaneta es un planeta que orbita una estrella fuera de nuestro sistema solar. Gracias a las misiones y observaciones realizadas por la NASA, hemos podido descubrir cientos de estos mundos, cada uno más diverso y emocionante que el anterior.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/aDk_K5lRUfg" title="Video explicativo de la NASA sobre exoplanetas" frameborder="0" ></iframe>
+            </div>
+        </section>
+
+        <!-- Exploración del descubrimiento -->
+        <section id="metodos">
+            <h2>¿Cómo descubrimos exoplanetas?</h2>
+            <div class="metodo">
+                <h3>- Método de Tránsito:</h3>
+                <p>El método de tránsito es una de las formas más exitosas para encontrar exoplanetas. Ocurre cuando un planeta pasa frente a su estrella, causando una pequeña disminución en la luz que recibimos de ella.</p>
+                <video controls src="https://science.nasa.gov/wp-content/uploads/2023/09/ExoplanetTypes_Full_Mix.mp4" width="100%" height="auto"></video>
+            </div>
+            <div class="metodo">
+                <h3>- Método de Velocidad Radial:</h3>
+                <p>Este método detecta pequeñas variaciones en la velocidad de una estrella causadas por la gravedad de un planeta orbitándola.</p>
+                <video controls src="https://stsci-opo.org/STScI-01EVS1VPY8WMZY5ZCCYP3XC9CM.mp4" width="100%" height="auto"></video>
+            </div>
+        </section>
+
+        <!-- Historias de Exoplanetas -->
+        <section id="historias">
+            <h2>Historias Fascinantes de Exoplanetas</h2>
+            <p>Descubre algunos de los exoplanetas más intrigantes descubiertos por el programa de exploración de exoplanetas de la NASA.</p>
+            <ul>
+                <li><strong>Kepler-22b</strong>: Un planeta ubicado en la zona habitable de su estrella, que podría tener un ambiente adecuado para la vida.</li>
+                <a href="https://eyes.nasa.gov/apps/exo/#/planet/Kepler-22_b">Ingrese_aqui_para_interactuar</a>
+                <li><strong>TRAPPIST-1e</strong>: Parte de un sistema de siete planetas rocosos, cuatro de los cuales se encuentran en la zona habitable.</li>
+                <a href="https://eyes.nasa.gov/apps/exo/#/planet/TRAPPIST-1_e">Ingrese_aqui_para_interactuar</a>
+                <li><strong>Proxima Centauri b</strong>: El exoplaneta más cercano a la Tierra, que podría tener agua en su superficie.</li>
+                <a href="https://eyes.nasa.gov/apps/exo/#/planet/TRAPPIST-1_e">Ingrese_aqui_para_interactuar</a>
+            </ul>
+        </section>
+
+        <!-- Realidad Virtual y Aumentada -->
+        <section id="vr-ar">
+            <h2>Explora los Exoplanetas en Realidad Virtual y Aumentada</h2>
+            <p>Sumérgete en la experiencia de explorar exoplanetas a través de la realidad virtual y aumentada. Utiliza la tecnología para viajar a mundos distantes y aprender sobre sus características de una manera completamente nueva. Visita la experiencia interactiva proporcionada por NASA y explora exoplanetas como si estuvieras allí.</p>
+
+            <button onclick="window.location.href='https://eyes.nasa.gov/apps/exo/#/'">Explora con NASA Eyes</button>
+        </section>
+
+        <!-- Inteligencia Artificial en la Exploración de Exoplanetas -->
+        <section id="ia">
+            <h2>Inteligencia Artificial en la Exploración de Exoplanetas</h2>
+            <p>La inteligencia artificial (IA) juega un papel clave en la búsqueda y análisis de exoplanetas. Los algoritmos de IA pueden analizar grandes cantidades de datos proporcionados por telescopios, como el telescopio espacial Kepler, para identificar patrones que indican la presencia de un exoplaneta. Esto ayuda a los astrónomos a reducir el tiempo de análisis y encontrar más exoplanetas que podrían ser habitables.</p>
+            <p>Con la ayuda de la IA, hemos sido capaces de identificar cientos de planetas potenciales que antes hubieran pasado desapercibidos. La IA permite mejorar la precisión y velocidad en el descubrimiento de estos nuevos mundos.</p>
+        </section>
+
+
+        <!-- Recursos Educativos -->
+        <section id="recursos">
+            <h2>Recursos para Aprender Más</h2>
+            <p>Explora los recursos proporcionados por la NASA para seguir aprendiendo sobre los exoplanetas y su exploración:</p>
+            <ul>
+                <li><a href="https://exoplanets.nasa.gov/" target="_blank">Portal de Exoplanetas de la NASA</a></li>
+                <li><a href="https://www.nasa.gov/mission_pages/kepler/main/index.html" target="_blank">Misión Kepler</a></li>
+                <li><a href="https://hackanexoplanet.esa.int/tag/hackathon-activities/" target="_blank">Actividades del Hackaton</a></li>
+
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Desarrollado para el Space Apps Challenge 2024 | Créditos: NASA y otros colaboradores.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
